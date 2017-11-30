@@ -6,7 +6,7 @@
 
 #define MAX_DEVICES 2
 
-class testApp : public ofBaseApp{
+class ofApp : public ofBaseApp{
 
 public:
     
@@ -23,12 +23,12 @@ public:
 	void mouseReleased(int x, int y, int button);
 	void windowResized(int w, int h);
 
-    int numDevices;
-	ofxOpenNI openNIDevices[MAX_DEVICES];
+private:
     
+    void handEvent(ofxOpenNIHandEvent & event);
+    
+	ofxOpenNI openNIDevice;
     ofTrueTypeFont verdana;
-    
-    void userEvent(ofxOpenNIUserEvent & event);
     
 };
 

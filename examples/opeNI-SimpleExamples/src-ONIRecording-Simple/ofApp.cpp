@@ -1,4 +1,4 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 class myUser : public ofxOpenNIUser {
 public:
@@ -8,7 +8,7 @@ public:
 };
 
 //--------------------------------------------------------------
-void testApp::setup() {
+void ofApp::setup() {
     
  
     ofSetLogLevel(OF_LOG_VERBOSE);
@@ -29,13 +29,13 @@ void testApp::setup() {
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update(){
     openNIRecorder.update();
     openNIPlayer.update();
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	ofSetColor(255, 255, 255);
     
     ofPushMatrix();
@@ -51,23 +51,23 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::userEvent(ofxOpenNIUserEvent & event){
+void ofApp::userEvent(ofxOpenNIUserEvent & event){
     ofLogNotice() << getUserStatusAsString(event.userStatus) << "for user" << event.id << "from device" << event.deviceID;
 }
 
 //--------------------------------------------------------------
-void testApp::gestureEvent(ofxOpenNIGestureEvent & event){
+void ofApp::gestureEvent(ofxOpenNIGestureEvent & event){
     ofLogNotice() << event.gestureName << getGestureStatusAsString(event.gestureStatus) << "from device" << event.deviceID << "at" << event.timestampMillis;
 }
 
 //--------------------------------------------------------------
-void testApp::exit(){
+void ofApp::exit(){
     openNIRecorder.stop();
     openNIPlayer.stop();
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
 
     int cloudRes = -1;
     switch (key) {
@@ -107,31 +107,31 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }

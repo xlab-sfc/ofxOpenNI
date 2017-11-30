@@ -4,7 +4,9 @@
 #include "ofxOpenNI.h"
 #include "ofMain.h"
 
-class testApp : public ofBaseApp{
+#define MAX_DEVICES 2
+
+class ofApp : public ofBaseApp{
 
 public:
     
@@ -21,13 +23,12 @@ public:
 	void mouseReleased(int x, int y, int button);
 	void windowResized(int w, int h);
 
-	ofxOpenNI openNIRecorder;
-    ofxOpenNI openNIPlayer;
+    int numDevices;
+	ofxOpenNI openNIDevices[MAX_DEVICES];
     
     ofTrueTypeFont verdana;
     
     void userEvent(ofxOpenNIUserEvent & event);
-    void gestureEvent(ofxOpenNIGestureEvent & event);
     
 };
 

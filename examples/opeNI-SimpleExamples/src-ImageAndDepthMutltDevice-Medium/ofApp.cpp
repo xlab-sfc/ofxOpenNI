@@ -1,7 +1,7 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup() {
+void ofApp::setup() {
 
     ofSetLogLevel(OF_LOG_NOTICE);
 
@@ -21,14 +21,14 @@ void testApp::setup() {
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update(){
     for (int deviceID = 0; deviceID < numDevices; deviceID++){
         openNIDevices[deviceID].update();
     }
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	ofSetColor(255, 255, 255);
 
     ofPushMatrix();
@@ -48,14 +48,14 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::exit(){
+void ofApp::exit(){
     for (int deviceID = 0; deviceID < numDevices; deviceID++){
         openNIDevices[deviceID].stop();
     }
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
     switch (key) {
         case 't':
             for (int deviceID = 0; deviceID < numDevices; deviceID++){
@@ -73,32 +73,32 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }
 

@@ -1,7 +1,7 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup() {
+void ofApp::setup() {
     
     ofSetLogLevel(OF_LOG_NOTICE);
     
@@ -22,7 +22,7 @@ void testApp::setup() {
     // so it's safe to assume that the fist device to ask (ie., deviceID == 0) will have the user generator...
     
     openNIDevices[0].setMaxNumUsers(1); // defualt is 4
-    ofAddListener(openNIDevices[0].userEvent, this, &testApp::userEvent);
+    ofAddListener(openNIDevices[0].userEvent, this, &ofApp::userEvent);
     
     ofxOpenNIUser user;
     user.setUseMaskTexture(true);
@@ -50,7 +50,7 @@ void testApp::setup() {
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update(){
     ofBackground(0, 0, 0);
     for (int deviceID = 0; deviceID < numDevices; deviceID++){
         openNIDevices[deviceID].update();
@@ -58,7 +58,7 @@ void testApp::update(){
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	ofSetColor(255, 255, 255);
     
     ofPushMatrix();
@@ -93,12 +93,12 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::userEvent(ofxOpenNIUserEvent & event){
+void ofApp::userEvent(ofxOpenNIUserEvent & event){
     ofLogNotice() << getUserStatusAsString(event.userStatus) << "for user" << event.id << "from device" << event.deviceID;
 }
 
 //--------------------------------------------------------------
-void testApp::exit(){
+void ofApp::exit(){
     // this often does not work -> it's a known bug -> but calling it on a key press or anywhere that isnt std::aexit() works
     // press 'x' to shutdown cleanly...
     for (int deviceID = 0; deviceID < numDevices; deviceID++){
@@ -107,7 +107,7 @@ void testApp::exit(){
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
     int cloudRes = -1;
     switch (key) {
         case '1':
@@ -158,32 +158,32 @@ void testApp::keyPressed(int key){
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }
 

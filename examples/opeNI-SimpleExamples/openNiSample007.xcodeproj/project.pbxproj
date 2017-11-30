@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7704EC2414C70657001AF021 /* testApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7704EC2114C70657001AF021 /* testApp.cpp */; };
+		7704EC2414C70657001AF021 /* ofApp.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7704EC2114C70657001AF021 /* ofApp.cpp */; };
 		7704EC2614C7066A001AF021 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7704EC2514C7066A001AF021 /* main.cpp */; };
 		770F032514B9969E003CCE99 /* libnimCodecs.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F031714B9969E003CCE99 /* libnimCodecs.dylib */; };
 		770F032614B9969E003CCE99 /* libnimMockNodes.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 770F031814B9969E003CCE99 /* libnimMockNodes.dylib */; };
@@ -73,8 +73,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		7704EC2114C70657001AF021 /* testApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = testApp.cpp; sourceTree = "<group>"; };
-		7704EC2214C70657001AF021 /* testApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testApp.h; sourceTree = "<group>"; };
+		7704EC2114C70657001AF021 /* ofApp.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ofApp.cpp; sourceTree = "<group>"; };
+		7704EC2214C70657001AF021 /* ofApp.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ofApp.h; sourceTree = "<group>"; };
 		7704EC2514C7066A001AF021 /* main.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		770F031614B9969E003CCE99 /* change_exec_paths.sh */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.script.sh; path = change_exec_paths.sh; sourceTree = "<group>"; };
 		770F031714B9969E003CCE99 /* libnimCodecs.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; path = libnimCodecs.dylib; sourceTree = "<group>"; };
@@ -596,8 +596,8 @@
 			isa = PBXGroup;
 			children = (
 				7704EC2514C7066A001AF021 /* main.cpp */,
-				7704EC2114C70657001AF021 /* testApp.cpp */,
-				7704EC2214C70657001AF021 /* testApp.h */,
+				7704EC2114C70657001AF021 /* ofApp.cpp */,
+				7704EC2214C70657001AF021 /* ofApp.h */,
 			);
 			path = src;
 			sourceTree = SOURCE_ROOT;
@@ -699,7 +699,7 @@
 			files = (
 				77CAE36B14BC009900772BC0 /* ofxOpenNI.cpp in Sources */,
 				77EBF17C14BEF08600D2C8EC /* ofxOpenNITypes.cpp in Sources */,
-				7704EC2414C70657001AF021 /* testApp.cpp in Sources */,
+				7704EC2414C70657001AF021 /* ofApp.cpp in Sources */,
 				7704EC2614C7066A001AF021 /* main.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

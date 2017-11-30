@@ -1,7 +1,7 @@
-#include "testApp.h"
+#include "ofApp.h"
 
 //--------------------------------------------------------------
-void testApp::setup() {
+void ofApp::setup() {
     
     ofSetLogLevel(OF_LOG_VERBOSE);
 
@@ -39,7 +39,7 @@ void testApp::setup() {
 }
 
 //--------------------------------------------------------------
-void testApp::update(){
+void ofApp::update(){
     openNIDevice.update();
     
     // reset all depthThresholds to 0,0,0
@@ -72,7 +72,7 @@ void testApp::update(){
 }
 
 //--------------------------------------------------------------
-void testApp::draw(){
+void ofApp::draw(){
 	ofSetColor(255, 255, 255);
     
     ofPushMatrix();
@@ -130,47 +130,47 @@ void testApp::draw(){
 }
 
 //--------------------------------------------------------------
-void testApp::handEvent(ofxOpenNIHandEvent & event){
+void ofApp::handEvent(ofxOpenNIHandEvent & event){
     // show hand event messages in the console
     ofLogNotice() << getHandStatusAsString(event.handStatus) << "for hand" << event.id << "from device" << event.deviceID;
 }
 
 //--------------------------------------------------------------
-void testApp::exit(){
+void ofApp::exit(){
     openNIDevice.stop();
 }
 
 //--------------------------------------------------------------
-void testApp::keyPressed(int key){
+void ofApp::keyPressed(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::keyReleased(int key){
+void ofApp::keyReleased(int key){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseMoved(int x, int y ){
+void ofApp::mouseMoved(int x, int y ){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseDragged(int x, int y, int button){
+void ofApp::mouseDragged(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mousePressed(int x, int y, int button){
+void ofApp::mousePressed(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::mouseReleased(int x, int y, int button){
+void ofApp::mouseReleased(int x, int y, int button){
 
 }
 
 //--------------------------------------------------------------
-void testApp::windowResized(int w, int h){
+void ofApp::windowResized(int w, int h){
 
 }

@@ -122,7 +122,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClCompile Include="..\..\..\addons\ofxOpenNI\src\ofxOpenNI.cpp" />
     <ClCompile Include="..\..\..\addons\ofxOpenNI\src\ofxOpenNITypes.cpp" />
     <ClCompile Include="src\main.cpp" />
-    <ClCompile Include="src\testApp.cpp" />
+    <ClCompile Include="src\ofApp.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="..\..\..\addons\ofxOpenNI\include\nite\XnCommon.h" />
@@ -255,7 +255,7 @@ if not exist "$(ProjectDir)\bin\data" mkdir  "$(ProjectDir)\bin\data"
     <ClInclude Include="..\..\..\addons\ofxOpenNI\src\ofxOpenNI.h" />
     <ClInclude Include="..\..\..\addons\ofxOpenNI\src\ofxOpenNITypes.h" />
     <ClInclude Include="..\..\..\addons\ofxOpenNI\src\ofxOpenNIUtils.h" />
-    <ClInclude Include="src\testApp.h" />
+    <ClInclude Include="src\ofApp.h" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\..\..\libs\openFrameworksCompiled\project\vs2010\openframeworksLib.vcxproj">

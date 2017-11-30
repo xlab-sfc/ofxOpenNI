@@ -4,14 +4,15 @@
 #include "ofxOpenNI.h"
 #include "ofMain.h"
 
-class testApp : public ofBaseApp{
+class ofApp : public ofBaseApp{
 
 public:
+    
 	void setup();
 	void update();
 	void draw();
     void exit();
-
+    
 	void keyPressed  (int key);
 	void keyReleased(int key);
 	void mouseMoved(int x, int y );
@@ -20,9 +21,13 @@ public:
 	void mouseReleased(int x, int y, int button);
 	void windowResized(int w, int h);
 
+	ofxOpenNI openNIRecorder;
+    ofxOpenNI openNIPlayer;
+    
     ofTrueTypeFont verdana;
     
-	ofxOpenNI openNIDevice;
+    void userEvent(ofxOpenNIUserEvent & event);
+    void gestureEvent(ofxOpenNIGestureEvent & event);
     
 };
 

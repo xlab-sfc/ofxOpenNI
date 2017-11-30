@@ -1372,11 +1372,11 @@
 	"ofxTrackedUser.h"
 
 1325758820 source:c:\users\gameover7\code\of007\apps\devdonotdelete\openni-demoallfeatures\src\main.cpp
-	"testApp.h"
+	"ofApp.h"
 	"ofMain.h"
 	"ofAppGlutWindow.h"
 
-1325758820 c:\users\gameover7\code\of007\apps\devdonotdelete\openni-demoallfeatures\src\testapp.h
+1325758820 c:\users\gameover7\code\of007\apps\devdonotdelete\openni-demoallfeatures\src\ofApp.h
 	"ofxOpenNI.h"
 	"ofMain.h"
 
@@ -1403,8 +1403,8 @@
 	"ofPoint.h"
 	"ofTypes.h"
 
-1326015711 source:c:\users\gameover7\code\of007\apps\devdonotdelete\openni-demoallfeatures\src\testapp.cpp
-	"testApp.h"
+1326015711 source:c:\users\gameover7\code\of007\apps\devdonotdelete\openni-demoallfeatures\src\ofApp.cpp
+	"ofApp.h"
 
 1329957136 source:c:\users\gameover\code\of007\addons\ofxopenni\src\ofxopennitypes.cpp
 	"ofxOpenNITypes.h"
@@ -2081,11 +2081,11 @@
 	"ofTypes.h"
 
 1329957136 source:c:\users\gameover\code\of007\apps\devdonotdelete\openi-simpleexamples\src\main.cpp
-	"testApp.h"
+	"ofApp.h"
 	"ofMain.h"
 	"ofAppGlutWindow.h"
 
-1329957136 c:\users\gameover\code\of007\apps\devdonotdelete\openi-simpleexamples\src\testapp.h
+1329957136 c:\users\gameover\code\of007\apps\devdonotdelete\openi-simpleexamples\src\ofApp.h
 	"ofxOpenNI.h"
 	"ofMain.h"
 
@@ -2739,6 +2739,6 @@
 	<stdlib.h>
 	<signal.h>
 
-1329970658 source:c:\users\gameover\code\of007\apps\devdonotdelete\openi-simpleexamples\src\testapp.cpp
-	"testApp.h"
+1329970658 source:c:\users\gameover\code\of007\apps\devdonotdelete\openi-simpleexamples\src\ofApp.cpp
+	"ofApp.h"
 
