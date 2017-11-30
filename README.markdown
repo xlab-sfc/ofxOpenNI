@@ -15,3 +15,5 @@ ld: library not found for -lXnDDK
 clang: error: linker command failed with exit code 1 (use -v to see invocation)
 ```
 * In addtion to install instractions in the original readme file, see [this](http://stackoverflow.com/questions/33681299/apple-mach-o-linker-id-error-for-openframeworks/34559001#34559001) to fix linker error in XCode.
+
+* https://forum.openframeworks.cc/t/ofxopenni-kinect-skeleton-and-poco-deprecation/23026/12
